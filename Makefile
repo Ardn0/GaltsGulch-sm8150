@@ -689,6 +689,7 @@ LLVM_NM		:= llvm-nm
 export LLVM_AR LLVM_NM
 # Set O3 optimization level for LTO with most linkers
 LDFLAGS		+= -O3
+LDFLAGS		+= --lto-O3
 LDFLAGS		+= --plugin-opt=O3
 LDFLAGS		+= --plugin-opt=-import-instr-limit=5
 endif
