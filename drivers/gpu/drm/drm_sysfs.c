@@ -1194,15 +1194,6 @@ static ssize_t op_display_get_power_status(struct device *dev,
 	return sprintf(buf, "%d\n", oneplus_panel_status);
 }
 
-static ssize_t op_display_set_power_status(struct device *dev,
-				struct device_attribute *attr,
-				const char *buf, size_t count)
-{
-	sscanf(buf, "%d", &oneplus_panel_status);
-
-	return count;
-}
-
 static ssize_t op_display_get_dimlayer_enable(struct device *dev,
 				struct device_attribute *attr, char *buf)
 {
