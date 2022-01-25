@@ -5717,8 +5717,8 @@ static int sde_crtc_onscreenfinger_atomic_check(struct sde_crtc_state *cstate,
 
 	aod_mode = oneplus_aod_hid;
 	if (oneplus_dim_status == 5 && display->panel->aod_status == 0){
-		//oneplus_dim_status = 0;
-		//oneplus_dimlayer_hbm_enable = false;
+		oneplus_dim_status = 0; //A11
+		oneplus_dimlayer_hbm_enable = false; //A11
 		dim_mode = 0;
 	}
 
